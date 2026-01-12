@@ -1,4 +1,6 @@
 // ===== CONTACT FORM WITH FIREBASE =====
+// This file ONLY handles the contact form with Firebase
+// Booking form is handled separately in script.js
 
 // Wait for Firebase to be ready
 window.addEventListener("load", function () {
@@ -27,7 +29,7 @@ window.addEventListener("load", function () {
     contactForm.addEventListener("submit", async function (e) {
       e.preventDefault();
 
-      console.log("📧 Form submitted...");
+      console.log("📧 Contact form submitted...");
 
       // Get form values
       const formData = {
@@ -40,7 +42,7 @@ window.addEventListener("load", function () {
         status: "unread",
       };
 
-      console.log("📋 Form data:", formData);
+      console.log("📋 Contact form data:", formData);
 
       // Validate form
       if (
@@ -99,96 +101,10 @@ window.addEventListener("load", function () {
       }
     });
   } else {
-    console.error(
-      '❌ Contact form not found! Check if id="contactForm" exists.'
-    );
-  }
-
-  // Also handle booking form if it exists
-  const bookingForm = document.getElementById("bookingForm");
-
-  if (bookingForm) {
     console.log(
-      "%c✅ Booking form found!",
-      "color: #10b981; font-weight: bold;"
+      "%cℹ️ No contact form on this page (this is normal for non-contact pages)",
+      "color: #94a3b8;"
     );
-
-    bookingForm.addEventListener("submit", async function (e) {
-      e.preventDefault();
-
-      // Get booking form values
-      const bookingData = {
-        fullName: document.getElementById("fullName").value.trim(),
-        email: document.getElementById("email").value.trim(),
-        phone: document.getElementById("phone").value.trim(),
-        travelers: document.getElementById("travelers").value,
-        destination: document.getElementById("destination").value,
-        departureDate: document.getElementById("departureDate").value,
-        packageType: document.getElementById("packageType").value,
-        roomType: document.getElementById("roomType").value,
-        dietary: document.getElementById("dietary").value.trim(),
-        specialRequests: document
-          .getElementById("specialRequests")
-          .value.trim(),
-        timestamp: new Date().toISOString(),
-        status: "pending",
-      };
-
-      // Validate required fields
-      if (
-        !bookingData.fullName ||
-        !bookingData.email ||
-        !bookingData.phone ||
-        !bookingData.destination ||
-        !bookingData.departureDate ||
-        !bookingData.packageType
-      ) {
-        showNotification("Please fill in all required fields", "error");
-        return;
-      }
-
-      // Show loading state
-      const submitButton = bookingForm.querySelector('button[type="submit"]');
-      const originalButtonText = submitButton.textContent;
-      submitButton.textContent = "Processing...";
-      submitButton.disabled = true;
-
-      try {
-        // Save to Firebase Realtime Database
-        const bookingsRef = firebase.database().ref("bookings");
-        const newBookingRef = bookingsRef.push();
-
-        await newBookingRef.set(bookingData);
-
-        console.log(
-          "%c✅ Booking saved to Firebase!",
-          "color: #10b981; font-weight: bold;"
-        );
-
-        // Success
-        showNotification(
-          `Thank you, ${bookingData.fullName}! Your booking request has been received. Our team will contact you within 24 hours.`,
-          "success"
-        );
-        bookingForm.reset();
-
-        // Update summary
-        if (typeof updateSummary === "function") {
-          updateSummary();
-        }
-      } catch (error) {
-        console.error(
-          "%c❌ Booking Error:",
-          "color: #ef4444; font-weight: bold;",
-          error
-        );
-        showNotification("Failed to submit booking: " + error.message, "error");
-      } finally {
-        // Reset button
-        submitButton.textContent = originalButtonText;
-        submitButton.disabled = false;
-      }
-    });
   }
 });
 
@@ -280,6 +196,6 @@ function showNotification(message, type = "info") {
 }
 
 console.log(
-  "%c📧 Contact form handler loaded!",
+  "%c📧 Contact form Firebase handler loaded!",
   "color: #10b981; font-weight: bold;"
 );
