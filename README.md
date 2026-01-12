@@ -1,176 +1,121 @@
 # Wanderlust Travel Website 🌍✈️
 
-A modern, responsive travel booking website with Firebase integration for managing contact forms and bookings.
+Wanderlust is a modern, responsive **multi-page travel booking website** built using HTML, CSS, and JavaScript, with Firebase integration for handling contact and booking data.
 
-## 🎨 Features
+This project focuses on real-world website structure, user experience, and clean UI design.
 
-- **Responsive Design** - Works perfectly on desktop, tablet, and mobile
-- **Modern UI/UX** - Clean design with smooth animations and transitions
-- **Firebase Integration** - Real-time database for form submissions
-- **Interactive Components** - FAQ accordions, category tabs, animated counters
-- **Multiple Pages** - Home, Destinations, Packages, Booking, Reviews, Contact
+---
 
-## 🚀 Technologies Used
+## ✨ Key Highlights
+
+- Fully responsive (desktop, tablet, mobile)
+- Clean and modern UI with consistent design system
+- Multi-page website architecture
+- Firebase Realtime Database integration
+- Booking-style user flow
+- Interactive components (filters, calculators, FAQs)
+
+---
+
+## 🧩 Pages Included
+
+- **Home** – Hero, featured destinations, FAQs, newsletter
+- **Destinations** – Highlights, galleries, packages, tips
+- **Packages** – Comparison table, pricing tiers, add-ons
+- **Booking** – Step-based booking flow with summary & calculator
+- **Reviews** – Ratings, filters, testimonials, trust badges
+- **Contact** – Firebase-powered contact form & FAQs
+
+---
+
+## 🛠️ Tech Stack
 
 - HTML5
-- CSS3 (with CSS Variables)
+- CSS3 (CSS Variables, responsive layouts)
 - JavaScript (Vanilla JS)
 - Firebase Realtime Database
-- Firebase Authentication (ready to use)
+- Firebase Authentication (configured, optional)
+
+---
 
 ## 📁 Project Structure
 
-```
 wanderlust-project/
-├── index.html              # Home page
-├── destinations.html       # Destinations showcase
-├── packages.html          # Travel packages
-├── book.html              # Booking form
-├── reviews.html           # Customer reviews
-├── contact.html           # Contact form (Firebase integrated)
-├── styles.css             # All styling
-├── script.js              # Main JavaScript
-├── firebase-config.js     # Firebase configuration (NOT in repo)
-└── contact-form-handler.js # Firebase form handler
-```
+├── index.html
+├── destinations.html
+├── packages.html
+├── book.html
+├── reviews.html
+├── contact.html
+├── styles.css
+├── script.js
+├── firebase-config.js (not committed)
+└── contact-form-handler.js
 
 ## 🎯 Features Overview
 
-### Home Page
+## 🔥 Features Breakdown
 
-- Hero section with call-to-action
-- Featured destinations grid
-- How it works section
-- Travel by category (tabs)
-- Blog preview
-- Stats counter animation
-- FAQ section
-- Newsletter signup
+### Booking Flow
 
-### Destinations Page
-
-- Featured destination showcase
-- Destination highlights
-- Photo gallery
-- Package options
-- Traveler testimonials
-- Local tips & insights
-
-### Packages Page
-
-- Three-tier pricing (Basic, Premium, Luxury)
-- Package comparison table
-- Add-ons and upgrades
-- Seasonal deals
-- Price calculator
-
-### Contact Page
-
-- Contact form (Firebase integrated)
-- Office information
-- FAQ section
-- Map placeholder
-
-### Reviews Page
-
-- Rating overview with animated bars
-- Filter by destination/rating/package
-- Customer testimonials
-- Trust badges
-
-### Booking Page
-
-- Multi-step booking process
-- Real-time price calculator
+- Step indicator
 - Trip summary
 - Traveler preferences
-- Payment information
+- Price calculator
 
-### Contacts
+### Packages
 
-```json
-{
-  "contacts": {
-    "unique-id": {
-      "name": "John Doe",
-      "email": "john@example.com",
-      "phone": "+1234567890",
-      "subject": "Booking Inquiry",
-      "message": "I want to book...",
-      "timestamp": "2025-01-13T10:30:00.000Z",
-      "status": "unread"
-    }
-  }
-}
-```
+- Basic / Premium / Luxury tiers
+- Comparison table
+- Add-ons & upgrades
+- Seasonal offers
 
-### Bookings
+### Reviews
+
+- Filter by destination, rating & package
+- Rating statistics
+- Trust badges
+
+### Firebase Data Structure
+
+**Contacts**
 
 ```json
 {
-  "bookings": {
-    "unique-id": {
-      "fullName": "Jane Smith",
-      "email": "jane@example.com",
-      "destination": "Maldives",
-      "packageType": "premium",
-      "travelers": 2,
-      "departureDate": "2025-03-15",
-      "timestamp": "2025-01-13T10:30:00.000Z",
-      "status": "pending"
-    }
-  }
+  "name": "John Doe",
+  "email": "john@example.com",
+  "message": "Booking inquiry",
+  "timestamp": "ISO Date",
+  "status": "unread"
 }
-```
+Bookings
 
-## 🎨 Customization
-
-### Colors
-
-Edit CSS variables in `styles.css`:
-
-```css
-:root {
-  --primary: #2563eb;
-  --secondary: #10b981;
-  --accent: #f59e0b;
-  --bg-dark: #0f172a;
-  --bg-card: #1e293b;
-  --text-light: #f1f5f9;
-  --text-muted: #94a3b8;
+json
+Copy code
+{
+  "fullName": "Jane Smith",
+  "destination": "Maldives",
+  "packageType": "Premium",
+  "travelers": 2,
+  "departureDate": "2025-03-15",
+  "status": "pending"
 }
-```
+🎨 Customization
+Colors via CSS variables in styles.css
 
-### Content
+Content editable directly in HTML
 
-- Update destination information in HTML files
-- Modify pricing in `packages.html`
-- Change contact details in `contact.html`
-- Add your own images in the `assets/` folder
+Images replaceable in /assets
 
-## 📱 Responsive Breakpoints
-
-- **Desktop**: 1200px+
-- **Tablet**: 768px - 1199px
-- **Mobile**: < 768px
-
-## 👤 Author
-
-**Your Name**
+👤 Author
+Ashwani Umesh
 
 - GitHub: [Ashwani Umesh](https://github.com/23ashwaniak)
 - LinkedIn: [Ashwani Umesh](https://www.linkedin.com/in/23ashwanisingh/)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Firebase for real-time database
 - Google Fonts for typography
 - Inspiration from modern travel websites
-
-## 📧 Contact
-
-For questions or support, please contact: your.email@example.com
-
----
-
-**⭐ If you found this project helpful, please give it a star on GitHub!**
+```
