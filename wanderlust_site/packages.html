@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Wanderlust — Packages</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <img
+            src="assets/Screenshot_2025-12-12_070748.png"
+            alt="logo"
+            style="
+              width: 44px;
+              height: 44px;
+              border-radius: 8px;
+              box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+            " />
+          <div class="brand">Wanderlust</div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="packages.html" class="active">Packages</a>
+          <a href="book.html">Book Now</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="nav-toggle" style="display: none">Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section style="padding: 40px 0; text-align: center">
+          <h1 style="font-size: 40px">Travel Packages</h1>
+          <p style="color: var(--muted)">
+            Choose the perfect package for your journey — crafted for comfort
+            and discovery.
+          </p>
+          <div class="pricing">
+            <div class="price-card">
+              <h3>Basic Explorer</h3>
+              <div style="font-size: 36px; color: var(--gold)">
+                $499
+                <span
+                  style="font-size: 14px; color: var(--muted)">/person</span>
+              </div>
+              <p style="color: var(--muted)">
+                3 Days • 2 Nights • 3-Star Hotel • Breakfast
+              </p>
+              <a class="btn" href="book.html"
+                style="margin-top: 18px">Choose</a>
+            </div>
+            <div class="price-card popular">
+              <h3>Premium Adventure</h3>
+              <div style="font-size: 36px; color: var(--gold)">
+                $999
+                <span
+                  style="font-size: 14px; color: var(--muted)">/person</span>
+              </div>
+              <p style="color: var(--muted)">
+                5 Days • 4 Nights • 4-Star Hotel • All Meals
+              </p>
+              <a class="btn" href="book.html"
+                style="margin-top: 18px">Choose</a>
+            </div>
+            <div class="price-card">
+              <h3>Luxury Escape</h3>
+              <div style="font-size: 36px; color: var(--gold)">
+                $1,999
+                <span
+                  style="font-size: 14px; color: var(--muted)">/person</span>
+              </div>
+              <p style="color: var(--muted)">
+                7 Days • 6 Nights • 5-Star Resort • Private Transfer
+              </p>
+              <a class="btn" href="book.html"
+                style="margin-top: 18px">Choose</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="cols">
+          <div>
+            <div style="display: flex; gap: 10px; align-items: center">
+              <img
+                src="assets/Screenshot_2025-12-12_070748.png"
+                style="width: 36px; height: 36px" />
+              <strong style="color: var(--gold)">Wanderlust</strong>
+            </div>
+            <p style="max-width: 280px; color: var(--muted)">
+              Your gateway to unforgettable adventures around the world. We
+              create memories that last a lifetime.
+            </p>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Quick Links</h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                color: var(--muted);
+              ">
+              <li>
+                <a
+                  href="index.html"
+                  style="color: inherit; text-decoration: none">Home</a>
+              </li>
+              <li>
+                <a
+                  href="destinations.html"
+                  style="color: inherit; text-decoration: none">Destinations</a>
+              </li>
+              <li>
+                <a
+                  href="packages.html"
+                  style="color: inherit; text-decoration: none">Packages</a>
+              </li>
+              <li>
+                <a
+                  href="book.html"
+                  style="color: inherit; text-decoration: none">Book Now</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Support</h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                color: var(--muted);
+              ">
+              <li>Contact Us</li>
+              <li>FAQs</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Newsletter</h4>
+            <p style="color: var(--muted)">
+              Subscribe for exclusive deals and travel tips.
+            </p>
+            <form
+              onsubmit="event.preventDefault()"
+              style="display: flex; gap: 8px">
+              <input class="input" placeholder="Your email" style="flex: 1" />
+              <button
+                class="btn"
+                style="padding: 10px 14px; border-radius: 8px">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div style="margin-top: 28px; color: var(--muted); font-size: 13px">
+          © 2024 Wanderlust Travels. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

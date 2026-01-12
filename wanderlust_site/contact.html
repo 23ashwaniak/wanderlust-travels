@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Wanderlust — Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <img
+            src="assets/Screenshot_2025-12-12_070748.png"
+            alt="logo"
+            style="
+              width: 44px;
+              height: 44px;
+              border-radius: 8px;
+              box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+            " />
+          <div class="brand">Wanderlust</div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="packages.html">Packages</a>
+          <a href="book.html">Book Now</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <button class="nav-toggle" style="display: none">Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section style="padding: 30px 0; text-align: center">
+          <h1 style="font-size: 40px">Get In Touch</h1>
+          <p style="color: var(--muted)">
+            We'd love to hear from you — questions, special requests, or
+            partnership inquiries.
+          </p>
+          <div class="two-col">
+            <div style="display: grid; gap: 18px">
+              <div class="panel">
+                <strong style="color: var(--gold)">Email Us</strong>
+                <div style="color: var(--muted); margin-top: 8px">
+                  info@wanderlust.com<br />support@wanderlust.com
+                </div>
+              </div>
+              <div class="panel">
+                <strong style="color: var(--gold)">Call Us</strong>
+                <div style="color: var(--muted); margin-top: 8px">
+                  +1 (800) 123-4567<br />24/7 Support
+                </div>
+              </div>
+              <div class="panel">
+                <strong style="color: var(--gold)">Visit Us</strong>
+                <div style="color: var(--muted); margin-top: 8px">
+                  123 Travel Street<br />New York, NY 10001
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <form id="contactForm">
+                <label class="label">Your Name</label><input
+                  class="input"
+                  name="name"
+                  placeholder="Enter your name"
+                  required /><label class="label">Your Email</label><input
+                  class="input"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  required /><label class="label">Subject</label><input
+                  class="input"
+                  name="subject"
+                  placeholder="What's this about?" /><label
+                  class="label">Message</label><textarea
+                  class="input"
+                  name="message"
+                  rows="5"
+                  placeholder="Your message here..."></textarea>
+                <div style="text-align: right; margin-top: 8px">
+                  <button class="btn" type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="cols">
+          <div>
+            <div style="display: flex; gap: 10px; align-items: center">
+              <img
+                src="assets/Screenshot_2025-12-12_070748.png"
+                style="width: 36px; height: 36px" />
+              <strong style="color: var(--gold)">Wanderlust</strong>
+            </div>
+            <p style="max-width: 280px; color: var(--muted)">
+              Your gateway to unforgettable adventures around the world. We
+              create memories that last a lifetime.
+            </p>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Quick Links</h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                color: var(--muted);
+              ">
+              <li>
+                <a
+                  href="index.html"
+                  style="color: inherit; text-decoration: none">Home</a>
+              </li>
+              <li>
+                <a
+                  href="destinations.html"
+                  style="color: inherit; text-decoration: none">Destinations</a>
+              </li>
+              <li>
+                <a
+                  href="packages.html"
+                  style="color: inherit; text-decoration: none">Packages</a>
+              </li>
+              <li>
+                <a
+                  href="book.html"
+                  style="color: inherit; text-decoration: none">Book Now</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Support</h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                color: var(--muted);
+              ">
+              <li>Contact Us</li>
+              <li>FAQs</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Newsletter</h4>
+            <p style="color: var(--muted)">
+              Subscribe for exclusive deals and travel tips.
+            </p>
+            <form
+              onsubmit="event.preventDefault()"
+              style="display: flex; gap: 8px">
+              <input class="input" placeholder="Your email" style="flex: 1" />
+              <button
+                class="btn"
+                style="padding: 10px 14px; border-radius: 8px">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div style="margin-top: 28px; color: var(--muted); font-size: 13px">
+          © 2024 Wanderlust Travels. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

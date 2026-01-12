@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Wanderlust — Reviews</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <img
+            src="assets/Screenshot_2025-12-12_070748.png"
+            alt="logo"
+            style="
+              width: 44px;
+              height: 44px;
+              border-radius: 8px;
+              box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+            " />
+          <div class="brand">Wanderlust</div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="packages.html">Packages</a>
+          <a href="book.html">Book Now</a>
+          <a href="reviews.html" class="active">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="nav-toggle" style="display: none">Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section style="padding: 40px 0; text-align: center">
+          <h1 style="font-size: 40px">What Our Travelers Say</h1>
+          <p style="color: var(--muted)">Real experiences from real people</p>
+          <div class="testimonials" style="margin-top: 26px">
+            <div class="testimonial">
+              <div class="stars">★★★★★</div>
+              <p style="font-style: italic; color: var(--muted)">
+                "Absolutely amazing experience! The team handled everything
+                perfectly. Our Maldives trip was a dream come true!"
+              </p>
+              <div style="margin-top: 12px; font-weight: 700">Michael Chen</div>
+              <div style="color: var(--muted)">Traveled to Maldives</div>
+            </div>
+            <div class="testimonial">
+              <div class="stars">★★★★★</div>
+              <p style="font-style: italic; color: var(--muted)">
+                "Professional service from start to finish. Our Paris vacation
+                was seamless and unforgettable."
+              </p>
+              <div style="margin-top: 12px; font-weight: 700">
+                Sarah Johnson
+              </div>
+              <div style="color: var(--muted)">Traveled to Paris</div>
+            </div>
+            <div
+              class="testimonial"
+              style="
+                box-shadow: 0 18px 60px rgba(108, 124, 255, 0.08);
+                border-radius: 14px;
+              ">
+              <div class="stars">★★★★★</div>
+              <p style="font-style: italic; color: var(--muted)">
+                "Best travel agency ever! They customized our Japan trip
+                perfectly. Every detail was taken care of beautifully."
+              </p>
+              <div style="margin-top: 12px; font-weight: 700">
+                David Rodriguez
+              </div>
+              <div style="color: var(--muted)">Traveled to Japan</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="cols">
+          <div>
+            <div style="display: flex; gap: 10px; align-items: center">
+              <img
+                src="assets/Screenshot_2025-12-12_070748.png"
+                style="width: 36px; height: 36px" />
+              <strong style="color: var(--gold)">Wanderlust</strong>
+            </div>
+            <p style="max-width: 280px; color: var(--muted)">
+              Your gateway to unforgettable adventures around the world. We
+              create memories that last a lifetime.
+            </p>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Quick Links</h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                color: var(--muted);
+              ">
+              <li>
+                <a
+                  href="index.html"
+                  style="color: inherit; text-decoration: none">Home</a>
+              </li>
+              <li>
+                <a
+                  href="destinations.html"
+                  style="color: inherit; text-decoration: none">Destinations</a>
+              </li>
+              <li>
+                <a
+                  href="packages.html"
+                  style="color: inherit; text-decoration: none">Packages</a>
+              </li>
+              <li>
+                <a
+                  href="book.html"
+                  style="color: inherit; text-decoration: none">Book Now</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Support</h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                color: var(--muted);
+              ">
+              <li>Contact Us</li>
+              <li>FAQs</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Newsletter</h4>
+            <p style="color: var(--muted)">
+              Subscribe for exclusive deals and travel tips.
+            </p>
+            <form
+              onsubmit="event.preventDefault()"
+              style="display: flex; gap: 8px">
+              <input class="input" placeholder="Your email" style="flex: 1" />
+              <button
+                class="btn"
+                style="padding: 10px 14px; border-radius: 8px">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div style="margin-top: 28px; color: var(--muted); font-size: 13px">
+          © 2024 Wanderlust Travels. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

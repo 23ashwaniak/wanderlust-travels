@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip - Wanderlust</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">
+            <span class="logo-icon">✈️</span>
+            <span>Wanderlust</span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="book.html" class="active">Book Now</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" id="navToggle">☰</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <h1>Book Your Dream Trip</h1>
+          <p>Fill in your details and our travel experts will create a
+            personalized itinerary for you</p>
+        </div>
+      </section>
+
+      <!-- Booking Steps -->
+      <section class="booking-steps">
+        <div class="container">
+          <div class="steps-container">
+            <div class="step-item active">
+              <div class="step-number">1</div>
+              <div class="step-label">Traveler Info</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <div class="step-label">Package Selection</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <div class="step-label">Payment</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking Form -->
+      <section class="booking-form-section">
+        <div class="container">
+          <div class="booking-layout">
+
+            <!-- Main Form -->
+            <div class="booking-main">
+              <div class="booking-card">
+                <h2>Traveler Information</h2>
+                <form class="booking-form" id="bookingForm">
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="fullName">Full Name *</label>
+                      <input type="text" id="fullName" name="fullName" required
+                        placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email Address *</label>
+                      <input type="email" id="email" name="email" required
+                        placeholder="john@example.com">
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="phone">Phone Number *</label>
+                      <input type="tel" id="phone" name="phone" required
+                        placeholder="+1 (555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                      <label for="travelers">Number of Travelers *</label>
+                      <input type="number" id="travelers" name="travelers"
+                        min="1" value="2" required>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="destination">Destination *</label>
+                      <select id="destination" name="destination" required>
+                        <option value>Select Destination</option>
+                        <option value="maldives">Maldives</option>
+                        <option value="paris">Paris</option>
+                        <option value="japan">Japan</option>
+                        <option value="switzerland">Switzerland</option>
+                        <option value="bali">Bali</option>
+                        <option value="greece">Greece</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="departureDate">Departure Date *</label>
+                      <input type="date" id="departureDate" name="departureDate"
+                        required>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="packageType">Package Type *</label>
+                    <select id="packageType" name="packageType" required>
+                      <option value>Select Package</option>
+                      <option value="basic">Basic Explorer - $499</option>
+                      <option value="premium">Premium Adventure - $999</option>
+                      <option value="luxury">Luxury Escape - $1,999</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="roomType">Room Preference</label>
+                    <select id="roomType" name="roomType">
+                      <option value="standard">Standard Room</option>
+                      <option value="ocean">Ocean View</option>
+                      <option value="villa">Private Villa</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="dietary">Dietary Preferences</label>
+                    <input type="text" id="dietary" name="dietary"
+                      placeholder="Vegan, Gluten-Free, etc.">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="specialRequests">Special Requests</label>
+                    <textarea id="specialRequests" name="specialRequests"
+                      rows="4"
+                      placeholder="Honeymoon, anniversary celebration, early check-in..."></textarea>
+                  </div>
+
+                  <button type="submit"
+                    class="btn btn-primary btn-large btn-block">Submit Booking
+                    Request</button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Booking Summary Sidebar -->
+            <div class="booking-sidebar">
+
+              <!-- Trip Summary -->
+              <div class="booking-card">
+                <h3>Trip Summary</h3>
+                <div class="summary-item">
+                  <span class="summary-label">Destination</span>
+                  <span class="summary-value" id="summaryDestination">Not
+                    selected</span>
+                </div>
+                <div class="summary-item">
+                  <span class="summary-label">Package</span>
+                  <span class="summary-value" id="summaryPackage">Not
+                    selected</span>
+                </div>
+                <div class="summary-item">
+                  <span class="summary-label">Travelers</span>
+                  <span class="summary-value" id="summaryTravelers">2</span>
+                </div>
+                <div class="summary-item">
+                  <span class="summary-label">Departure</span>
+                  <span class="summary-value" id="summaryDate">Not
+                    selected</span>
+                </div>
+                <div class="summary-divider"></div>
+                <div class="summary-total">
+                  <span>Estimated Total</span>
+                  <span class="total-price" id="totalPrice">$0</span>
+                </div>
+              </div>
+
+              <!-- Features -->
+              <div class="booking-card">
+                <h3>Why Book With Us?</h3>
+                <ul class="booking-features">
+                  <li>✓ 24/7 Customer Support</li>
+                  <li>✓ Secure Payment</li>
+                  <li>✓ Best Price Guarantee</li>
+                  <li>✓ Free Cancellation</li>
+                </ul>
+              </div>
+
+              <!-- Payment Methods -->
+              <div class="booking-card">
+                <h3>Secure Payment</h3>
+                <p class="text-muted">We accept all major payment methods</p>
+                <div class="payment-badges">
+                  <span class="payment-badge">Visa</span>
+                  <span class="payment-badge">Mastercard</span>
+                  <span class="payment-badge">PayPal</span>
+                  <span class="payment-badge">Amex</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Cancellation Policy -->
+      <section class="policy-section">
+        <div class="container">
+          <div class="policy-card">
+            <h2>Cancellation & Refund Policy</h2>
+            <ul class="policy-list">
+              <li>✓ Free cancellation up to <strong>7 days</strong> before
+                departure</li>
+              <li>✓ 50% refund available up to 48 hours before departure</li>
+              <li>✓ No refunds for cancellations within 48 hours of
+                departure</li>
+              <li>✓ Full refunds provided if flights or hotels are
+                unavailable</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="booking-testimonials">
+        <div class="container">
+          <h2 class="section-title">What Our Travelers Say</h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p
+                class="testimonial-text">"Booking was smooth and secure. The team helped instantly!"</p>
+              <div class="testimonial-author">
+                <strong>Riya Patel</strong>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p
+                class="testimonial-text">"Loved the step-by-step process. Very transparent!"</p>
+              <div class="testimonial-author">
+                <strong>Mark Wilson</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Wanderlust</h4>
+            <p>Your gateway to unforgettable adventures around the world.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: info@wanderlust.com<br>Phone: +1 (800) 123-4567</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Wanderlust Travels. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

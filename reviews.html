@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Wanderlust</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">
+            <span class="logo-icon">✈️</span>
+            <span>Wanderlust</span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="reviews.html" class="active">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" id="navToggle">☰</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <h1>What Our Travelers Say</h1>
+          <p>Real experiences from real people who traveled with us</p>
+        </div>
+      </section>
+
+      <!-- Rating Overview -->
+      <section class="rating-overview">
+        <div class="container">
+          <div class="rating-card">
+            <div class="rating-score">
+              <div class="score-number">4.8</div>
+              <div class="score-stars">★★★★★</div>
+              <div class="score-text">Based on 2,000+ verified reviews</div>
+            </div>
+            <div class="rating-breakdown">
+              <div class="rating-bar-item">
+                <span class="rating-label">5 Stars</span>
+                <div class="rating-bar">
+                  <div class="rating-bar-fill" style="width: 78%"></div>
+                </div>
+                <span class="rating-percent">78%</span>
+              </div>
+              <div class="rating-bar-item">
+                <span class="rating-label">4 Stars</span>
+                <div class="rating-bar">
+                  <div class="rating-bar-fill" style="width: 18%"></div>
+                </div>
+                <span class="rating-percent">18%</span>
+              </div>
+              <div class="rating-bar-item">
+                <span class="rating-label">3 Stars</span>
+                <div class="rating-bar">
+                  <div class="rating-bar-fill" style="width: 4%"></div>
+                </div>
+                <span class="rating-percent">4%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Review Filters -->
+      <section class="review-filters">
+        <div class="container">
+          <div class="filters-container">
+            <select class="filter-select" id="filterDestination">
+              <option value>All Destinations</option>
+              <option value="maldives">Maldives</option>
+              <option value="paris">Paris</option>
+              <option value="japan">Japan</option>
+              <option value="switzerland">Switzerland</option>
+              <option value="bali">Bali</option>
+              <option value="greece">Greece</option>
+            </select>
+
+            <select class="filter-select" id="filterRating">
+              <option value>All Ratings</option>
+              <option value="5">5 Stars</option>
+              <option value="4">4+ Stars</option>
+              <option value="3">3+ Stars</option>
+            </select>
+
+            <select class="filter-select" id="filterPackage">
+              <option value>All Packages</option>
+              <option value="basic">Basic</option>
+              <option value="premium">Premium</option>
+              <option value="luxury">Luxury</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews Grid -->
+      <section class="reviews-section">
+        <div class="container">
+          <h2 class="section-title">Traveler Reviews</h2>
+
+          <div class="reviews-grid" id="reviewsGrid">
+
+            <!-- Review Card 1 -->
+            <div class="review-card" data-destination="maldives" data-rating="5"
+              data-package="luxury">
+              <div class="review-header">
+                <div class="review-avatar">M</div>
+                <div class="review-author-info">
+                  <strong>Michael Chen</strong>
+                  <span class="review-date">Traveled to Maldives • Dec
+                    2024</span>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p
+                class="review-text">"Absolutely amazing experience! The Maldives trip was perfectly planned and exceeded all our expectations. The private villa was stunning and the service was impeccable."</p>
+              <div class="review-footer">
+                <span class="review-badge">Luxury Package</span>
+              </div>
+            </div>
+
+            <!-- Review Card 2 -->
+            <div class="review-card" data-destination="paris" data-rating="5"
+              data-package="premium">
+              <div class="review-header">
+                <div class="review-avatar">S</div>
+                <div class="review-author-info">
+                  <strong>Sarah Johnson</strong>
+                  <span class="review-date">Traveled to Paris • Nov 2024</span>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p
+                class="review-text">"Professional service from start to finish. Our Paris vacation was seamless and unforgettable! Every detail was taken care of beautifully."</p>
+              <div class="review-footer">
+                <span class="review-badge">Premium Package</span>
+              </div>
+            </div>
+
+            <!-- Review Card 3 -->
+            <div class="review-card" data-destination="japan" data-rating="5"
+              data-package="premium">
+              <div class="review-header">
+                <div class="review-avatar">D</div>
+                <div class="review-author-info">
+                  <strong>David Rodriguez</strong>
+                  <span class="review-date">Traveled to Japan • Oct 2024</span>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p
+                class="review-text">"Best travel agency ever! They customized our Japan trip perfectly. The cultural experiences and food tours were highlights of our journey."</p>
+              <div class="review-footer">
+                <span class="review-badge">Premium Package</span>
+              </div>
+            </div>
+
+            <!-- Review Card 4 -->
+            <div class="review-card" data-destination="bali" data-rating="5"
+              data-package="basic">
+              <div class="review-header">
+                <div class="review-avatar">P</div>
+                <div class="review-author-info">
+                  <strong>Priya Sharma</strong>
+                  <span class="review-date">Traveled to Bali • Sep 2024</span>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p
+                class="review-text">"Best trip ever! Bali was breathtaking and everything was well planned. Great value for money with the basic package!"</p>
+              <div class="review-footer">
+                <span class="review-badge">Basic Package</span>
+              </div>
+            </div>
+
+            <!-- Review Card 5 -->
+            <div class="review-card" data-destination="greece" data-rating="4"
+              data-package="premium">
+              <div class="review-header">
+                <div class="review-avatar">L</div>
+                <div class="review-author-info">
+                  <strong>Lucas Moretti</strong>
+                  <span class="review-date">Traveled to Greece • Aug 2024</span>
+                </div>
+              </div>
+              <div class="stars">★★★★☆</div>
+              <p
+                class="review-text">"Greece package exceeded expectations — perfect mix of comfort & sightseeing! The island hopping was magical."</p>
+              <div class="review-footer">
+                <span class="review-badge">Premium Package</span>
+              </div>
+            </div>
+
+            <!-- Review Card 6 -->
+            <div class="review-card" data-destination="switzerland"
+              data-rating="5" data-package="luxury">
+              <div class="review-header">
+                <div class="review-avatar">A</div>
+                <div class="review-author-info">
+                  <strong>Aisha Khan</strong>
+                  <span class="review-date">Traveled to Switzerland • Jul
+                    2024</span>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p
+                class="review-text">"Switzerland itinerary was curated beautifully. The scenic train rides and mountain views were unforgettable. Would book again!"</p>
+              <div class="review-footer">
+                <span class="review-badge">Luxury Package</span>
+              </div>
+            </div>
+
+            <!-- Review Card 7 -->
+            <div class="review-card" data-destination="maldives" data-rating="5"
+              data-package="premium">
+              <div class="review-header">
+                <div class="review-avatar">A</div>
+                <div class="review-author-info">
+                  <strong>Arjun Kapoor</strong>
+                  <span class="review-date">Traveled to Maldives • Jun
+                    2024</span>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p
+                class="review-text">"The private villa experience was unforgettable! Water activities and spa treatments were top-notch."</p>
+              <div class="review-footer">
+                <span class="review-badge">Premium Package</span>
+              </div>
+            </div>
+
+            <!-- Review Card 8 -->
+            <div class="review-card" data-destination="paris" data-rating="4"
+              data-package="basic">
+              <div class="review-header">
+                <div class="review-avatar">M</div>
+                <div class="review-author-info">
+                  <strong>Marie Dubois</strong>
+                  <span class="review-date">Traveled to Paris • May 2024</span>
+                </div>
+              </div>
+              <div class="stars">★★★★☆</div>
+              <p
+                class="review-text">"Great value and lovely walking tours around the city. Hotel was in perfect location near major attractions."</p>
+              <div class="review-footer">
+                <span class="review-badge">Basic Package</span>
+              </div>
+            </div>
+
+            <!-- Review Card 9 -->
+            <div class="review-card" data-destination="japan" data-rating="5"
+              data-package="luxury">
+              <div class="review-header">
+                <div class="review-avatar">K</div>
+                <div class="review-author-info">
+                  <strong>Kenji Tanaka</strong>
+                  <span class="review-date">Traveled to Japan • Apr 2024</span>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+              <p
+                class="review-text">"Perfect itinerary — food tour was amazing. The blend of traditional and modern experiences was exactly what we wanted!"</p>
+              <div class="review-footer">
+                <span class="review-badge">Luxury Package</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust Badges -->
+      <section class="trust-badges">
+        <div class="container">
+          <h2 class="section-title">Trusted by Travelers Worldwide</h2>
+          <div class="badges-grid">
+            <div class="trust-badge">
+              <div class="badge-logo">🌟</div>
+              <div class="badge-name">TripAdvisor</div>
+              <div class="badge-rating">★★★★★</div>
+            </div>
+            <div class="trust-badge">
+              <div class="badge-logo">🔍</div>
+              <div class="badge-name">Google Reviews</div>
+              <div class="badge-rating">4.7/5</div>
+            </div>
+            <div class="trust-badge">
+              <div class="badge-logo">🏨</div>
+              <div class="badge-name">Booking.com</div>
+              <div class="badge-rating">9.2/10</div>
+            </div>
+            <div class="trust-badge">
+              <div class="badge-logo">✈️</div>
+              <div class="badge-name">Trustpilot</div>
+              <div class="badge-rating">Excellent</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="reviews-cta">
+        <div class="container">
+          <div class="cta-content">
+            <h2>Ready to Create Your Own Story?</h2>
+            <p>Join thousands of happy travelers who trusted us with their dream
+              vacations</p>
+            <div class="cta-buttons">
+              <a href="packages.html" class="btn btn-primary btn-large">Explore
+                Packages</a>
+              <a href="contact.html" class="btn btn-secondary btn-large">Contact
+                Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Wanderlust</h4>
+            <p>Your gateway to unforgettable adventures around the world.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: info@wanderlust.com<br>Phone: +1 (800) 123-4567</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Wanderlust Travels. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

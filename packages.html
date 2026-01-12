@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages - Wanderlust</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">
+            <span class="logo-icon">✈️</span>
+            <span>Wanderlust</span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html" class="active">Packages</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" id="navToggle">☰</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <h1>Travel Packages</h1>
+          <p>Choose the perfect package for your journey - crafted for comfort
+            and discovery</p>
+        </div>
+      </section>
+
+      <!-- Package Options -->
+      <section class="packages-section">
+        <div class="container">
+          <h2 class="section-title">Choose Your Experience</h2>
+          <div class="packages-grid">
+
+            <!-- Basic Package -->
+            <div class="package-card">
+              <div class="package-header">
+                <h3>Basic Explorer</h3>
+                <div class="package-price">
+                  <span class="price-amount">$499</span>
+                  <span class="price-period">/person</span>
+                </div>
+              </div>
+              <ul class="package-features">
+                <li>✓ 3 Days / 2 Nights</li>
+                <li>✓ 3-Star Hotel</li>
+                <li>✓ Daily Breakfast</li>
+                <li>✓ Airport Transfers</li>
+                <li>✓ City Tour</li>
+                <li>✓ Travel Insurance</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary btn-block">Book
+                Now</a>
+            </div>
+
+            <!-- Premium Package -->
+            <div class="package-card featured">
+              <div class="package-badge">Most Popular</div>
+              <div class="package-header">
+                <h3>Premium Adventure</h3>
+                <div class="package-price">
+                  <span class="price-amount">$999</span>
+                  <span class="price-period">/person</span>
+                </div>
+              </div>
+              <ul class="package-features">
+                <li>✓ 5 Days / 4 Nights</li>
+                <li>✓ 4-Star Hotel</li>
+                <li>✓ All Meals Included</li>
+                <li>✓ Private Transfers</li>
+                <li>✓ Guided Tours</li>
+                <li>✓ Travel Insurance</li>
+                <li>✓ Activity Package</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary btn-block">Book
+                Now</a>
+            </div>
+
+            <!-- Luxury Package -->
+            <div class="package-card">
+              <div class="package-header">
+                <h3>Luxury Escape</h3>
+                <div class="package-price">
+                  <span class="price-amount">$1,999</span>
+                  <span class="price-period">/person</span>
+                </div>
+              </div>
+              <ul class="package-features">
+                <li>✓ 7 Days / 6 Nights</li>
+                <li>✓ 5-Star Resort</li>
+                <li>✓ All Inclusive</li>
+                <li>✓ Private Chauffeur</li>
+                <li>✓ Personal Guide</li>
+                <li>✓ Premium Insurance</li>
+                <li>✓ Spa Treatments</li>
+                <li>✓ Exclusive Experiences</li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary btn-block">Book
+                Now</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Package Comparison -->
+      <section class="comparison-section">
+        <div class="container">
+          <h2 class="section-title">Package Comparison</h2>
+          <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Features</th>
+                  <th>Basic</th>
+                  <th>Premium</th>
+                  <th>Luxury</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Duration</td>
+                  <td>3 Days</td>
+                  <td>5 Days</td>
+                  <td>7 Days</td>
+                </tr>
+                <tr>
+                  <td>Accommodation</td>
+                  <td>3-Star Hotel</td>
+                  <td>4-Star Hotel</td>
+                  <td>5-Star Resort</td>
+                </tr>
+                <tr>
+                  <td>Meals</td>
+                  <td>Breakfast Only</td>
+                  <td>All Meals</td>
+                  <td>All Inclusive</td>
+                </tr>
+                <tr>
+                  <td>Transfers</td>
+                  <td>Shared</td>
+                  <td>Private</td>
+                  <td>Private Chauffeur</td>
+                </tr>
+                <tr>
+                  <td>Tours</td>
+                  <td>City Tour</td>
+                  <td>Guided Tours</td>
+                  <td>Personal Guide</td>
+                </tr>
+                <tr>
+                  <td>Activities</td>
+                  <td>Basic</td>
+                  <td>Standard</td>
+                  <td>Exclusive</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Destination Packages -->
+      <section class="destination-packages">
+        <div class="container">
+          <h2 class="section-title">Packages by Destination</h2>
+          <div class="destinations-grid">
+
+            <div class="destination-card">
+              <div class="card-image"
+                style="background: linear-gradient(135deg, #2563eb, #10b981);"></div>
+              <div class="card-content">
+                <h3>Maldives Package</h3>
+                <p>5 nights in overwater villa with diving and spa</p>
+                <div class="card-footer">
+                  <span class="price">From $1,299</span>
+                  <a href="contact.html" class="btn btn-small btn-primary">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <div class="card-image"
+                style="background: linear-gradient(135deg, #ec4899, #f59e0b);"></div>
+              <div class="card-content">
+                <h3>Paris Romance</h3>
+                <p>4 nights with Eiffel Tower dinner and Seine cruise</p>
+                <div class="card-footer">
+                  <span class="price">From $899</span>
+                  <a href="contact.html" class="btn btn-small btn-primary">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <div class="card-image"
+                style="background: linear-gradient(135deg, #8b5cf6, #ec4899);"></div>
+              <div class="card-content">
+                <h3>Japan Explorer</h3>
+                <p>7 nights covering Tokyo, Kyoto, and Osaka</p>
+                <div class="card-footer">
+                  <span class="price">From $1,199</span>
+                  <a href="contact.html" class="btn btn-small btn-primary">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <div class="card-image"
+                style="background: linear-gradient(135deg, #06b6d4, #3b82f6);"></div>
+              <div class="card-content">
+                <h3>Swiss Alps</h3>
+                <p>6 nights with mountain excursions and scenic trains</p>
+                <div class="card-footer">
+                  <span class="price">From $1,499</span>
+                  <a href="contact.html" class="btn btn-small btn-primary">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <div class="card-image"
+                style="background: linear-gradient(135deg, #10b981, #059669);"></div>
+              <div class="card-content">
+                <h3>Bali Retreat</h3>
+                <p>5 nights with yoga, temples, and beach relaxation</p>
+                <div class="card-footer">
+                  <span class="price">From $799</span>
+                  <a href="contact.html" class="btn btn-small btn-primary">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <div class="card-image"
+                style="background: linear-gradient(135deg, #3b82f6, #2563eb);"></div>
+              <div class="card-content">
+                <h3>Greek Islands</h3>
+                <p>6 nights island hopping with history tours</p>
+                <div class="card-footer">
+                  <span class="price">From $999</span>
+                  <a href="contact.html" class="btn btn-small btn-primary">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- What's Included -->
+      <section class="whats-included">
+        <div class="container">
+          <h2 class="section-title">What's Included in All Packages</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">✈️</div>
+              <h3>Flights</h3>
+              <p>Round-trip economy class flights from major airports</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🏨</div>
+              <h3>Accommodation</h3>
+              <p>Comfortable stays at handpicked hotels and resorts</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🚗</div>
+              <h3>Transfers</h3>
+              <p>Airport pickups and drops with all transportation</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🎫</div>
+              <h3>Activities</h3>
+              <p>Curated experiences and guided tours included</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Wanderlust</h4>
+            <p>Your gateway to unforgettable adventures around the world.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: info@wanderlust.com<br>Phone: +1 (800) 123-4567</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Wanderlust Travels. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

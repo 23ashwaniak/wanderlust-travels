@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wanderlust</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">
+            <span class="logo-icon">✈️</span>
+            <span>Wanderlust</span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" id="navToggle">☰</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <h1>Get In Touch</h1>
+          <p>We'd love to hear from you - questions, special requests, or
+            partnership inquiries</p>
+        </div>
+      </section>
+
+      <!-- Contact Info -->
+      <section class="contact-info-section">
+        <div class="container">
+          <div class="contact-info-grid">
+
+            <div class="contact-info-card">
+              <div class="info-icon">📧</div>
+              <h3>Email Us</h3>
+              <p>info@wanderlust.com</p>
+              <p>support@wanderlust.com</p>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="info-icon">📞</div>
+              <h3>Call Us</h3>
+              <p>+1 (800) 123-4567</p>
+              <p>24/7 Support Available</p>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="info-icon">📍</div>
+              <h3>Visit Us</h3>
+              <p>123 Travel Street</p>
+              <p>New York, NY 10001</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="contact-form-section">
+        <div class="container">
+          <div class="contact-form-wrapper">
+            <div class="contact-form-content">
+              <h2>Send Us a Message</h2>
+              <p>Fill out the form below and our team will get back to you
+                within 24 hours</p>
+
+              <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required
+                      placeholder="John Doe">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required
+                      placeholder="john@example.com">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"
+                      placeholder="+1 (555) 123-4567">
+                  </div>
+                  <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                      <option value>Select a subject</option>
+                      <option value="booking">Booking Inquiry</option>
+                      <option value="package">Package Information</option>
+                      <option value="custom">Custom Trip Planning</option>
+                      <option value="support">Support</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea id="message" name="message" rows="6" required
+                    placeholder="Tell us about your travel plans..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">Send
+                  Message</button>
+              </form>
+            </div>
+
+            <div class="contact-sidebar">
+              <div class="contact-sidebar-card">
+                <h3>Office Hours</h3>
+                <p><strong>Monday - Friday:</strong><br>9:00 AM - 6:00 PM
+                  EST</p>
+                <p><strong>Saturday:</strong><br>10:00 AM - 4:00 PM EST</p>
+                <p><strong>Sunday:</strong><br>Closed</p>
+              </div>
+
+              <div class="contact-sidebar-card">
+                <h3>Quick Response</h3>
+                <p>Average response time: <strong>2-4 hours</strong> during
+                  business hours</p>
+              </div>
+
+              <div class="contact-sidebar-card">
+                <h3>Emergency Support</h3>
+                <p>24/7 emergency line for travelers:<br><strong>+1 (800)
+                    999-8888</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <div class="container">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="faq-container">
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>How far in advance should I book?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>We recommend booking at least 2-3 months in advance for
+                  international trips and 1 month for domestic travel. This
+                  ensures better availability and pricing.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>What is your cancellation policy?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Free cancellation up to 7 days before departure with full
+                  refund. Cancellations within 7 days are subject to a 50% fee.
+                  No refunds within 48 hours of departure.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Do you offer travel insurance?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes, we offer comprehensive travel insurance covering medical
+                  emergencies, trip cancellations, lost baggage, and more. We
+                  highly recommend it for all international trips.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Can I customize my package?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>Absolutely! All our packages can be customized to suit your
+                  preferences. Contact us with your requirements and we'll
+                  create a personalized itinerary.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>What payment methods do you accept?</h3>
+                <span class="faq-toggle">+</span>
+              </div>
+              <div class="faq-answer">
+                <p>We accept all major credit cards (Visa, Mastercard, American
+                  Express), PayPal, bank transfers, and offer flexible payment
+                  plans for bookings over $2000.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section class="map-section">
+        <div class="container">
+          <h2 class="section-title">Visit Our Office</h2>
+          <div class="map-placeholder">
+            <div class="map-overlay">
+              <p>📍 123 Travel Street, New York, NY 10001</p>
+              <p>Interactive map would be embedded here</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Wanderlust</h4>
+            <p>Your gateway to unforgettable adventures around the world.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: info@wanderlust.com<br>Phone: +1 (800) 123-4567</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Wanderlust Travels. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 1. Firebase SDK (MUST be first) -->
+    <script
+      src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+
+    <!-- 2. Firebase Config -->
+    <script src="firebase-config.js"></script>
+
+    <!-- 3. Form Handler -->
+    <script src="contact-form-handler.js"></script>
+
+    <!-- 4. Main Script (LAST) -->
+    <script src="script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust - Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">
+            <span class="logo-icon">✈️</span>
+            <span>Wanderlust - Ashwani</span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button class="nav-toggle" id="navToggle">☰</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <h1>Discover Your Next Adventure</h1>
+          <p class="hero-subtitle">
+            Explore breathtaking destinations and create unforgettable memories
+            with expertly curated travel packages
+          </p>
+          <div class="cta-buttons">
+            <a href="packages.html" class="btn btn-primary">Explore Packages</a>
+            <a href="destinations.html" class="btn btn-secondary">View
+              Destinations</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Destinations -->
+      <section class="featured-destinations">
+        <div class="container">
+          <h2 class="section-title">Popular Destinations</h2>
+          <p class="section-subtitle">
+            Handpicked locations for unforgettable experiences
+          </p>
+
+          <div class="destinations-grid">
+            <div class="destination-card">
+              <div
+                class="card-image"
+                style="background: linear-gradient(135deg, #2563eb, #10b981)"></div>
+              <div class="card-content">
+                <h3>Maldives</h3>
+                <p>
+                  Crystal clear waters and pristine white beaches await you in
+                  this tropical paradise.
+                </p>
+                <div class="card-footer">
+                  <span class="price">From $1,299</span>
+                  <a href="destinations.html"
+                    class="btn btn-small btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <div
+                class="card-image"
+                style="background: linear-gradient(135deg, #ec4899, #f59e0b)"></div>
+              <div class="card-content">
+                <h3>Paris</h3>
+                <p>
+                  Experience the city of love with iconic landmarks and
+                  world-class cuisine.
+                </p>
+                <div class="card-footer">
+                  <span class="price">From $899</span>
+                  <a href="destinations.html"
+                    class="btn btn-small btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <div
+                class="card-image"
+                style="background: linear-gradient(135deg, #8b5cf6, #ec4899)"></div>
+              <div class="card-content">
+                <h3>Japan</h3>
+                <p>
+                  Discover where ancient traditions meet modern innovation in
+                  this fascinating country.
+                </p>
+                <div class="card-footer">
+                  <span class="price">From $1,199</span>
+                  <a href="destinations.html"
+                    class="btn btn-small btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <div
+                class="card-image"
+                style="background: linear-gradient(135deg, #06b6d4, #3b82f6)"></div>
+              <div class="card-content">
+                <h3>Switzerland</h3>
+                <p>
+                  Majestic Alps, scenic trains, and chocolate make this a dream
+                  destination.
+                </p>
+                <div class="card-footer">
+                  <span class="price">From $1,499</span>
+                  <a href="destinations.html"
+                    class="btn btn-small btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <div
+                class="card-image"
+                style="background: linear-gradient(135deg, #10b981, #059669)"></div>
+              <div class="card-content">
+                <h3>Bali</h3>
+                <p>
+                  Tropical paradise with stunning temples, beaches, and vibrant
+                  culture.
+                </p>
+                <div class="card-footer">
+                  <span class="price">From $799</span>
+                  <a href="destinations.html"
+                    class="btn btn-small btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="destination-card">
+              <div
+                class="card-image"
+                style="background: linear-gradient(135deg, #3b82f6, #2563eb)"></div>
+              <div class="card-content">
+                <h3>Greece</h3>
+                <p>
+                  Ancient history meets stunning Mediterranean coastlines and
+                  islands.
+                </p>
+                <div class="card-footer">
+                  <span class="price">From $999</span>
+                  <a href="destinations.html"
+                    class="btn btn-small btn-primary">View Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="why-choose">
+        <div class="container">
+          <h2 class="section-title">Why Choose Wanderlust?</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🌍</div>
+              <h3>Expert Planning</h3>
+              <p>
+                Our travel experts craft personalized itineraries tailored to
+                your preferences
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">💰</div>
+              <h3>Best Prices</h3>
+              <p>
+                Competitive pricing with no hidden fees and flexible payment
+                options
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🛡️</div>
+              <h3>24/7 Support</h3>
+              <p>
+                Round-the-clock assistance for a worry-free travel experience
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">⭐</div>
+              <h3>Trusted Partners</h3>
+              <p>
+                We work with verified hotels, airlines, and local guides
+                worldwide
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials-section">
+        <div class="container">
+          <h2 class="section-title">What Our Travelers Say</h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                "An absolutely amazing experience! The Maldives trip was
+                perfectly planned and exceeded all our expectations."
+              </p>
+              <div class="testimonial-author">
+                <strong>Sarah Johnson</strong>
+                <span>Traveled to Maldives</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                "Professional service from start to finish. Our Paris vacation
+                was seamless and unforgettable!"
+              </p>
+              <div class="testimonial-author">
+                <strong>Michael Chen</strong>
+                <span>Traveled to Paris</span>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                "The best travel agency! They customized our Japan trip
+                perfectly and handled every detail beautifully."
+              </p>
+              <div class="testimonial-author">
+                <strong>David Rodriguez</strong>
+                <span>Traveled to Japan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter-section">
+        <div class="container">
+          <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>
+              Get exclusive deals, travel tips, and destination inspiration
+              delivered to your inbox
+            </p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="how-it-works">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">
+          Book your dream vacation in 4 simple steps
+        </p>
+
+        <div class="steps-grid">
+          <div class="process-step">
+            <div class="process-icon">🔍</div>
+            <div class="process-number">01</div>
+            <h3>Choose Destination</h3>
+            <p>
+              Browse through our curated list of stunning destinations and pick
+              your dream location
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-icon">📋</div>
+            <div class="process-number">02</div>
+            <h3>Select Package</h3>
+            <p>
+              Choose from Basic, Premium, or Luxury packages tailored to your
+              budget and preferences
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-icon">✍️</div>
+            <div class="process-number">03</div>
+            <h3>Book & Customize</h3>
+            <p>
+              Fill in your details and customize your trip with special requests
+              and preferences
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-icon">✈️</div>
+            <div class="process-number">04</div>
+            <h3>Travel & Enjoy</h3>
+            <p>
+              Pack your bags and embark on your adventure with our 24/7 support
+              backing you
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS BY CATEGORY -->
+    <section class="destinations-by-category">
+      <div class="container">
+        <h2 class="section-title">Explore by Interest</h2>
+        <p class="section-subtitle">
+          Find the perfect trip based on your travel style
+        </p>
+
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="beach">
+            🏖️ Beach
+          </button>
+          <button class="category-tab" data-category="adventure">
+            🏔️ Adventure
+          </button>
+          <button class="category-tab" data-category="culture">
+            🏛️ Culture
+          </button>
+          <button class="category-tab" data-category="romantic">
+            💑 Romantic
+          </button>
+        </div>
+
+        <div class="category-content">
+          <!-- Beach Category -->
+          <div class="category-panel active" data-panel="beach">
+            <div class="category-grid">
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #2563eb, #10b981)"></div>
+                <div class="category-card-content">
+                  <h3>Maldives</h3>
+                  <p>Pristine beaches & overwater villas</p>
+                  <span class="price-tag">From $1,299</span>
+                </div>
+              </div>
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #10b981, #059669)"></div>
+                <div class="category-card-content">
+                  <h3>Bali</h3>
+                  <p>Tropical paradise & beach resorts</p>
+                  <span class="price-tag">From $799</span>
+                </div>
+              </div>
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #3b82f6, #2563eb)"></div>
+                <div class="category-card-content">
+                  <h3>Greece</h3>
+                  <p>Mediterranean coastlines & islands</p>
+                  <span class="price-tag">From $999</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adventure Category -->
+          <div class="category-panel" data-panel="adventure">
+            <div class="category-grid">
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #06b6d4, #3b82f6)"></div>
+                <div class="category-card-content">
+                  <h3>Switzerland</h3>
+                  <p>Alpine adventures & mountain treks</p>
+                  <span class="price-tag">From $1,499</span>
+                </div>
+              </div>
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #8b5cf6, #ec4899)"></div>
+                <div class="category-card-content">
+                  <h3>New Zealand</h3>
+                  <p>Bungee jumping & skydiving thrills</p>
+                  <span class="price-tag">From $1,699</span>
+                </div>
+              </div>
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #10b981, #059669)"></div>
+                <div class="category-card-content">
+                  <h3>Iceland</h3>
+                  <p>Glacier hiking & northern lights</p>
+                  <span class="price-tag">From $1,899</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Culture Category -->
+          <div class="category-panel" data-panel="culture">
+            <div class="category-grid">
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #8b5cf6, #ec4899)"></div>
+                <div class="category-card-content">
+                  <h3>Japan</h3>
+                  <p>Ancient temples & modern culture</p>
+                  <span class="price-tag">From $1,199</span>
+                </div>
+              </div>
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #ec4899, #f59e0b)"></div>
+                <div class="category-card-content">
+                  <h3>Italy</h3>
+                  <p>Renaissance art & Roman history</p>
+                  <span class="price-tag">From $1,099</span>
+                </div>
+              </div>
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #f59e0b, #dc2626)"></div>
+                <div class="category-card-content">
+                  <h3>Egypt</h3>
+                  <p>Pyramids & ancient wonders</p>
+                  <span class="price-tag">From $899</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Romantic Category -->
+          <div class="category-panel" data-panel="romantic">
+            <div class="category-grid">
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #ec4899, #f59e0b)"></div>
+                <div class="category-card-content">
+                  <h3>Paris</h3>
+                  <p>City of love & romantic dinners</p>
+                  <span class="price-tag">From $899</span>
+                </div>
+              </div>
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #2563eb, #10b981)"></div>
+                <div class="category-card-content">
+                  <h3>Santorini</h3>
+                  <p>Sunset views & private villas</p>
+                  <span class="price-tag">From $1,199</span>
+                </div>
+              </div>
+              <div class="category-card">
+                <div
+                  class="category-card-image"
+                  style="background: linear-gradient(135deg, #8b5cf6, #ec4899)"></div>
+                <div class="category-card-content">
+                  <h3>Venice</h3>
+                  <p>Gondola rides & canal romance</p>
+                  <span class="price-tag">From $1,099</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAVEL BLOG SECTION -->
+    <section class="travel-blog">
+      <div class="container">
+        <h2 class="section-title">Travel Tips & Guides</h2>
+        <p class="section-subtitle">
+          Expert advice to make your journey unforgettable
+        </p>
+
+        <div class="blog-grid">
+          <div class="blog-card featured-blog">
+            <div
+              class="blog-image"
+              style="background: linear-gradient(135deg, #2563eb, #10b981)"></div>
+            <div class="blog-content">
+              <span class="blog-category">Travel Guide</span>
+              <h3>10 Essential Tips for First-Time International Travelers</h3>
+              <p>
+                Everything you need to know before embarking on your first
+                international adventure, from packing tips to cultural
+                etiquette.
+              </p>
+              <div class="blog-meta">
+                <span class="blog-author">By Sarah Miller</span>
+                <span class="blog-date">Jan 5, 2025</span>
+              </div>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div
+              class="blog-image"
+              style="background: linear-gradient(135deg, #ec4899, #f59e0b)"></div>
+            <div class="blog-content">
+              <span class="blog-category">Packing Tips</span>
+              <h3>How to Pack Light for a 2-Week Trip</h3>
+              <p>
+                Master the art of minimalist travel with our comprehensive
+                packing guide.
+              </p>
+              <div class="blog-meta">
+                <span class="blog-date">Dec 28, 2024</span>
+              </div>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div
+              class="blog-image"
+              style="background: linear-gradient(135deg, #8b5cf6, #ec4899)"></div>
+            <div class="blog-content">
+              <span class="blog-category">Destination Guide</span>
+              <h3>Best Time to Visit Popular Destinations</h3>
+              <p>
+                Discover the perfect season to explore each destination for the
+                best experience.
+              </p>
+              <div class="blog-meta">
+                <span class="blog-date">Dec 20, 2024</span>
+              </div>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div
+              class="blog-image"
+              style="background: linear-gradient(135deg, #10b981, #059669)"></div>
+            <div class="blog-content">
+              <span class="blog-category">Budget Travel</span>
+              <h3>Travel More, Spend Less: Budget Travel Hacks</h3>
+              <p>
+                Learn insider tips to save money while experiencing amazing
+                destinations.
+              </p>
+              <div class="blog-meta">
+                <span class="blog-date">Dec 15, 2024</span>
+              </div>
+              <a href="#" class="blog-link">Read More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS & ACHIEVEMENTS -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">🌍</div>
+            <div class="stat-number" data-target="150">0</div>
+            <div class="stat-label">Destinations</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">👥</div>
+            <div class="stat-number" data-target="50000">0</div>
+            <div class="stat-label">Happy Travelers</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">⭐</div>
+            <div class="stat-number" data-target="4.8">0</div>
+            <div class="stat-label">Average Rating</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-number" data-target="25">0</div>
+            <div class="stat-label">Awards Won</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Find answers to common questions about our services
+        </p>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How far in advance should I book my trip?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We recommend booking at least 2-3 months in advance for
+                international trips and 1 month for domestic travel. This
+                ensures better availability, pricing, and allows us to create
+                the perfect itinerary for you. However, we also handle
+                last-minute bookings based on availability.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is included in the package price?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Package prices typically include accommodation, meals (as
+                specified), airport transfers, guided tours, and travel
+                insurance. Flight costs may vary and can be included upon
+                request. Each package clearly lists what's included, and we can
+                customize based on your preferences.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is your cancellation policy?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Free cancellation up to 7 days before departure with full
+                refund. Cancellations within 7 days are subject to a 50% fee. No
+                refunds within 48 hours of departure. Full refunds are provided
+                if flights or hotels become unavailable due to circumstances
+                beyond your control.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you offer travel insurance?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, comprehensive travel insurance is included in all our
+                packages. It covers medical emergencies, trip cancellations,
+                lost baggage, flight delays, and more. We highly recommend
+                keeping the insurance active for international trips. Additional
+                coverage can be added upon request.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Can I customize my travel package?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely! All our packages are fully customizable. You can
+                modify destinations, accommodation types, activities, meal
+                plans, and trip duration. Our travel experts will work with you
+                to create a personalized itinerary that matches your preferences
+                and budget perfectly.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What payment methods do you accept?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We accept all major credit cards (Visa, Mastercard, American
+                Express), PayPal, bank transfers, and UPI payments. For bookings
+                over $2000, we offer flexible payment plans with 0% interest. A
+                deposit of 30% is required to confirm your booking.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do I need a visa for international travel?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Visa requirements vary by destination and your nationality. Our
+                team will provide complete guidance on visa requirements and
+                assist with the application process. We recommend checking visa
+                requirements at least 3 months before travel to ensure timely
+                processing.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What if I need to make changes to my booking?</h3>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Most bookings can be modified up to 7 days before departure.
+                Changes to dates, accommodations, or activities are subject to
+                availability and may incur additional fees. Contact our support
+                team as soon as possible to discuss your requirements, and we'll
+                do our best to accommodate your needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Wanderlust</h4>
+            <p>Your gateway to unforgettable adventures around the world.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: info@wanderlust.com<br />Phone: +1 (800) 123-4567</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Wanderlust Travels. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

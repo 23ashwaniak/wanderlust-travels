@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Wanderlust — Book</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div style="display: flex; align-items: center; gap: 12px">
+          <img
+            src="assets/Screenshot_2025-12-12_070748.png"
+            alt="logo"
+            style="
+              width: 44px;
+              height: 44px;
+              border-radius: 8px;
+              box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+            " />
+          <div class="brand">Wanderlust</div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="packages.html">Packages</a>
+          <a href="book.html" class="active">Book Now</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button class="nav-toggle" style="display: none">Menu</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section style="padding: 30px 0; text-align: center">
+          <h1 style="font-size: 40px">Plan Your Trip</h1>
+          <p style="color: var(--muted)">
+            Fill in a few details and our travel experts will reach out with a
+            tailored plan.
+          </p>
+          <div class="two-col">
+            <div class="panel">
+              <form id="contactForm">
+                <label class="label">Full Name</label><input
+                  class="input"
+                  name="name"
+                  placeholder="John Doe"
+                  required /><label class="label">Email Address</label><input
+                  class="input"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required /><label class="label">Phone Number</label><input
+                  class="input"
+                  name="phone"
+                  placeholder="+1 234 567 8900" /><label class="label">Number of
+                  Travelers</label><input
+                  class="input"
+                  name="travelers"
+                  type="number"
+                  value="2" /><label class="label">Destination</label><select
+                  class="input" name="destination">
+                  <option>Maldives</option>
+                  <option>Paris</option>
+                  <option>Japan</option>
+                  <option>Bali</option></select><label class="label">Departure
+                  Date</label><input
+                  class="input"
+                  name="departure"
+                  placeholder="dd-mm-yyyy" /><label class="label">Special
+                  Requests</label><textarea
+                  class="input"
+                  name="notes"
+                  rows="4"
+                  placeholder="Share preferences, allergies, celebrations..."></textarea>
+                <div style="text-align: right; margin-top: 8px">
+                  <button class="btn" type="submit">Send Request</button>
+                </div>
+              </form>
+            </div>
+            <div style="display: grid; gap: 18px">
+              <div class="panel" style="text-align: center">
+                <div
+                  style="font-weight: 800; color: var(--gold); font-size: 18px">
+                  24/7 Support
+                </div>
+                <p style="color: var(--muted)">
+                  Our team is available round the clock to assist with bookings
+                  and changes.
+                </p>
+              </div>
+              <div class="panel" style="text-align: center">
+                <div
+                  style="font-weight: 800; color: var(--gold); font-size: 18px">
+                  Secure Payments
+                </div>
+                <p style="color: var(--muted)">
+                  All transactions are encrypted and handled by trusted
+                  providers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="cols">
+          <div>
+            <div style="display: flex; gap: 10px; align-items: center">
+              <img
+                src="assets/Screenshot_2025-12-12_070748.png"
+                style="width: 36px; height: 36px" />
+              <strong style="color: var(--gold)">Wanderlust</strong>
+            </div>
+            <p style="max-width: 280px; color: var(--muted)">
+              Your gateway to unforgettable adventures around the world. We
+              create memories that last a lifetime.
+            </p>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Quick Links</h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                color: var(--muted);
+              ">
+              <li>
+                <a
+                  href="index.html"
+                  style="color: inherit; text-decoration: none">Home</a>
+              </li>
+              <li>
+                <a
+                  href="destinations.html"
+                  style="color: inherit; text-decoration: none">Destinations</a>
+              </li>
+              <li>
+                <a
+                  href="packages.html"
+                  style="color: inherit; text-decoration: none">Packages</a>
+              </li>
+              <li>
+                <a
+                  href="book.html"
+                  style="color: inherit; text-decoration: none">Book Now</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Support</h4>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                color: var(--muted);
+              ">
+              <li>Contact Us</li>
+              <li>FAQs</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="color: #cfe0ff">Newsletter</h4>
+            <p style="color: var(--muted)">
+              Subscribe for exclusive deals and travel tips.
+            </p>
+            <form
+              onsubmit="event.preventDefault()"
+              style="display: flex; gap: 8px">
+              <input class="input" placeholder="Your email" style="flex: 1" />
+              <button
+                class="btn"
+                style="padding: 10px 14px; border-radius: 8px">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div style="margin-top: 28px; color: var(--muted); font-size: 13px">
+          © 2024 Wanderlust Travels. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
